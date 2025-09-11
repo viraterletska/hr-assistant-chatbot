@@ -9,7 +9,7 @@ from transformers import pipeline
 
 # -------------------
 # Load documents
-loader = PyPDFLoader(r"D:\Bachelor_Work\hr-assistant-chatbot\hr_docs\sample_hr_policy_1.pdf")
+loader = PyPDFLoader("hr_docs/sample_hr_policy_1.pdf")
 docs = loader.load()
 
 # Split documents into chunks
