@@ -1,0 +1,16 @@
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# ChromaDB
+chroma_db_hr/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+

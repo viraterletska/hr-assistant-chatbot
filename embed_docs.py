@@ -14,7 +14,7 @@ splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=50)
 
 # -------------------
 # ChromaDB directory
-persist_dir = "chroma_db_new"
+persist_dir = "chroma_db_hr"
 os.makedirs(persist_dir, exist_ok=True)
 
 # -------------------
@@ -36,6 +36,6 @@ def embed_pdf(pdf_path, collection_name):
 # -------------------
 # Embed HR policies
 if __name__ == "__main__":
-    embed_pdf("hr_docs/sample_hr_policy_2.pdf", "hr_policies")
+    embed_pdf("hr_docs/hr_faq_doc.pdf", "hr_faq_and_guidelines")
     # Embed Lithuania Labour Code
     embed_pdf("hr_docs/LithuaniaLabourCode.pdf", "labour_code")
